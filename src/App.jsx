@@ -44,7 +44,7 @@ export default function App() {
             <div>
               <label htmlFor="initial">Número inicial:</label>
               <input
-                type="text"
+                type="number"
                 name="initial"
                 id="initial"
                 value={initial}
@@ -55,7 +55,7 @@ export default function App() {
             <div>
               <label htmlFor="final">Número final:</label>
               <input
-                type="text"
+                type="number"
                 name="final"
                 id="final"
                 value={final}
