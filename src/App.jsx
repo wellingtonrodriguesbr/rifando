@@ -3,8 +3,8 @@ import "./App.css";
 import { Loading } from "./Loading";
 
 export default function App() {
-  const [initial, setInitial] = useState(0);
-  const [final, setFinal] = useState(0);
+  const [initial, setInitial] = useState("");
+  const [final, setFinal] = useState("");
   const [result, setResult] = useState(0);
   const [loading, setLoading] = useState(false);
   const [hideElement, setHideElement] = useState(false);
@@ -47,7 +47,6 @@ export default function App() {
                 type="number"
                 name="initial"
                 id="initial"
-                min={0}
                 value={initial}
                 onChange={handleChangeInitial}
               />
@@ -59,7 +58,6 @@ export default function App() {
                 type="number"
                 name="final"
                 id="final"
-                min={0}
                 value={final}
                 onChange={handleChangeFinal}
               />
