@@ -9,6 +9,9 @@ export default function App() {
   const [loading, setLoading] = useState(false);
   const [hideElement, setHideElement] = useState(false);
 
+  const notValue = !(initial && final);
+  console.log(notValue);
+
   function handleChangeInitial(event) {
     setInitial(Number(event.target.value));
   }
@@ -63,7 +66,9 @@ export default function App() {
               />
             </div>
 
-            <button onClick={handleChangeResult}>Sortear</button>
+            <button disabled={notValue} onClick={handleChangeResult}>
+              Sortear
+            </button>
           </>
         ) : null}
 

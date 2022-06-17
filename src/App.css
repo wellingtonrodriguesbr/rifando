@@ -74,6 +74,11 @@
   background: #00a84c;
 }
 
+.content button:disabled {
+  filter: brightness(0.3);
+  cursor: not-allowed;
+}
+
 .result h2 {
   color: #fafafa;
 }
