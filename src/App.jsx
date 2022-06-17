@@ -28,8 +28,8 @@ export default function App() {
   }
 
   function redoLottery() {
-    setInitial(0);
-    setFinal(0);
+    setInitial("");
+    setFinal("");
     setResult(0);
     setHideElement(false);
   }
@@ -44,7 +44,7 @@ export default function App() {
             <div>
               <label htmlFor="initial">Número inicial:</label>
               <input
-                type="number"
+                type="text"
                 name="initial"
                 id="initial"
                 value={initial}
@@ -55,7 +55,7 @@ export default function App() {
             <div>
               <label htmlFor="final">Número final:</label>
               <input
-                type="number"
+                type="text"
                 name="final"
                 id="final"
                 value={final}
